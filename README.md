@@ -27,6 +27,13 @@ that the jobs are being picked up and processed.
 
 ## Deploying to Heroku
 
+Just click the button below to deploy this project to heroku. If you're
+alread in the Konglomerate beta program then the
+`konglomerate` add-on will be automatically provisioned for you.
+
+I'f you're not yet in the Konglomerate beta-program, you can request an
+invitation here: <http://konglomerate.io>
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 After your app is deployed you can watch the heroku process logs by
