@@ -2,22 +2,25 @@
 
 This is a tiny demo app to show how to use Faktory in a Rails project.
 
-Things you may want to cover:
+## Running this project locally
 
-* Ruby version
+Start your faktory server.
 
-* System dependencies
+```bash
+$ faktory
+```
 
-* Configuration
+Then start a worker
 
-* Database creation
+```bash
+$ faktory-worker
+```
 
-* Database initialization
+Then run a rake task to queue up 10 jobs
 
-* How to run the test suite
+```bash
+$ rake queue_jobs
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You should see some output in your `faktory-worker` console indicating
+that the jobs are being picked up and processed.
