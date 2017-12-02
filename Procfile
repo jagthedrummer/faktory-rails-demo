@@ -1,0 +1,1 @@
+worker: faktory-worker
