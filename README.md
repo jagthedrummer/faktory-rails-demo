@@ -28,3 +28,31 @@ that the jobs are being picked up and processed.
 ## Deploying to Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+After your app is deployed you can watch the heroku process logs by
+doing something this:
+
+```bash
+$ heroku logs --tail -a your-new-app
+```
+
+Then in a seperate console start your Faktory worker:
+
+```bash
+$ heroku ps:scale worker=1 -a your-new-app
+```
+
+And then queue some jobs:
+
+```bash
+$ heroku run rake queue_jobs
+```
+
+In the console where you're tailing the logs you should see some
+activity.
+
+Then don't forget to shut down the worker:
+
+```bash
+$ heroku ps:scale worker=0 -a your-new-app
+```
