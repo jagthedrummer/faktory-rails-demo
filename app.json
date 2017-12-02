@@ -2,5 +2,14 @@
   "name": "Faktory/Rails Demo",
   "description": "A tiny demo app to show how to use Faktory in a Rails project.",
   "repository": "https://github.com/jagthedrummer/faktory-rails-demo",
-  "keywords": ["faktory", "rails", "konglomerate"]
+  "keywords": ["faktory", "rails", "konglomerate"],
+  "env": {
+    "FAKTORY_PROVIDER": {
+      "description": "Tell faktory_worker_ruby to find a connection string in the KONGLOMERATE_URL ENV var.",
+      "value": "KONGLOMERATE_URL"
+    }
+  },
+  "addons": [
+    "konglomerate"
+  ]
 }
