@@ -1,0 +1,6 @@
+{
+  "name": "Faktory/Rails Demo",
+  "description": "A tiny demo app to show how to use Faktory in a Rails project.",
+  "repository": "https://github.com/jagthedrummer/faktory-rails-demo",
+  "keywords": ["faktory", "rails", "konglomerate"]
+}
