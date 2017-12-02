@@ -24,3 +24,7 @@ $ rake queue_jobs
 
 You should see some output in your `faktory-worker` console indicating
 that the jobs are being picked up and processed.
+
+## Deploying to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
