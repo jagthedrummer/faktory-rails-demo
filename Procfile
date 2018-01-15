@@ -1,1 +1,1 @@
-worker: faktory-worker
+worker: faktory-worker -C config/faktory.yml
